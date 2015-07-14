@@ -31,7 +31,7 @@ public class StoryActivity extends Activity {
         Intent i = getIntent();
         name = i.getStringExtra(getString(R.string.key_name));
         if(name == null) {
-            name = "Hey mate";
+            name = "Hey mate this a new adventure";
         }
 
         mImageView = (ImageView) findViewById(R.id.storyImage);
@@ -63,7 +63,7 @@ public class StoryActivity extends Activity {
             });
         }else{
             mChoice1.setText(currentPage.getmChoice1().getmText());
-            mChoice2.setText(currentPage.getmChoice1().getmText());
+            mChoice2.setText(currentPage.getmChoice2().getmText());
 
             mChoice1.setOnClickListener(new View.OnClickListener() {
                 @Override
