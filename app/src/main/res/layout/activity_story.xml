@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="doge.udlap.myapplication.ui.StoryActivity"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/storyImage"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/page0"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae blandit nisl, eu pellentesque leo. Pellentesque et lobortis felis, vitae aliquet ex. Donec tempor malesuada mattis. Suspendisse arcu ipsum, commodo in egestas et, lacinia sed purus. Ut a sapien non ipsum cursus pharetra a nec erat."
+        android:id="@+id/story"
+        android:layout_below="@+id/storyImage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="15dp"
+        android:lineSpacingMultiplier="1.2"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/choice2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/story"
+        android:layout_alignStart="@+id/story"
+        android:text="Stop and investigate"
+        android:backgroundTint="@android:color/white"
+        android:textColor="#ff2990b6" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue home to Earth"
+        android:id="@+id/choice1"
+        android:layout_above="@+id/choice2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:backgroundTint="@android:color/white"
+        android:textColor="#ff2990b6" />
+</RelativeLayout>
